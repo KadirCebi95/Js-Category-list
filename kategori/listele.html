@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Kategoriler</title>
+</head>
+<style>
+    
+</style>
+<body>
+    <section class="kategoriListele my-5">
+        <div class="container">
+            <form id="kategoriListeleForm">
+                <div class="row">
+                    <div class="col-lg-6 mb-3">
+                        <label for="kategoriAd" class="form-label">Kategori Ad:</label>
+                        <input type="text" class="form-control" id="kategoriAd" required>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <label for="kategoriAciklamasi" class="form-label">Kategori Açıklaması:</label>
+                        <input type="text" class="form-control" id="kategoriAciklamasi" required>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <label for="kategoriustId" class="form-label">Kategori Ust Id:</label>
+                        <input type="text" class="form-control" id="kategoriustId" required>
+                    </div>
+                    <div class="col-lg-6 mb-3">
+                        <label for="kategoriResim" class="form-label">Kategori Resmi (URL):</label>
+                        <input type="text" class="form-control" id="kategoriResim" required>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-success" onclick="kategoriEkle()">Kategori Ekle</button>
+            </form>
+        </div>
+    </section>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Kategori Adı</th>
+                    <th scope="col">Kategori Açıklaması</th>
+                    <th scope="col">Kategori Üst Id</th>
+                    <th scope="col">Kategori Resmi</th>
+                    <th scope="col">Kategori Resmi Önizle</th>
+                    <th scope="col">İşlemler</th> 
+                </tr>
+            </thead>
+            <tbody id="alan">
+                <!-- Kategoriler burada listelenecek -->
+            </tbody>
+        </table>
+
+     
+
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="listele.js"></script>
+
+</body>
+
+</html>
